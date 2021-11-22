@@ -1,7 +1,7 @@
 
 
-## Frontend Startup template for development 
-This is a startup template for frontend development. Any one can use this template for design any kind of projects. 
+## Portfolio template for development 
+portfolio template for frontend development. Any one can use this template for create portfolio website. 
 
 
 #### Features 
