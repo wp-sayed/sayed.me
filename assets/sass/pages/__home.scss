@@ -1,0 +1,215 @@
+/* ============================ 
+        Banner area start 
+==============================*/
+.banner{
+   height: 42rem;
+   background: $dark;
+   border-bottom: 3px solid red;
+   .text-content{
+      margin-top: 18rem;
+      color: $white;
+      span{
+         font-size: 1rem;
+         font-family: $primary-font;
+      }
+      h2{
+         font-size: 3rem;
+      }
+      p{
+         font-family: $primary-font;
+      }
+      h4{
+         color: $border;
+      }
+   }
+   .pthumb{
+         margin-top: 10rem;
+      img{
+         width: 300px;         
+         height: 300px;
+         border-radius: 50%;
+      }
+   }
+   .social{
+      ul{
+         position: absolute;
+         right: 25%;
+         li{
+            display: inline-block;
+            a{
+               margin: .33rem;
+               i{
+                  color: #fff;
+                  font-size: 2rem;
+               }
+            }
+         }
+      }
+   }
+}
+/* ============================ 
+        Contact area start 
+==============================*/
+.contact{
+   background: $dark;
+   height: auto;
+   padding-bottom: 5rem;
+   border-bottom: 3px solid red;
+   &__text{
+      padding-top: 5rem;
+      h6{
+         font-family: $primary-font;
+         text-transform: uppercase;
+         color: #E6425E;
+         font-weight: bold;
+      }
+      h2{
+         text-transform: uppercase;
+         color: $white;
+         position: relative;
+         &::before{
+            position: absolute;
+            content: '';
+            display: block;
+            width: 13.5rem;
+            height: 2px;
+            background: $border;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+         }
+      }
+   }
+   &__widget{
+      color: $white;
+      background: #059DC0;
+      padding: 5rem;
+      margin-top: 4rem;
+      border-radius: 5px;
+      a{
+         i{
+            color: #E6425E;
+            font-size: 2.4rem;
+            margin-top: 1rem;
+         }
+      }
+      h4{
+         font-family: $primary-font;
+         margin-top: 1rem;
+      }
+      span{
+         font-family: $primary-font;
+      }
+   }
+}
+
+/* ============================ 
+        Skill area start 
+==============================*/
+
+.skill{
+   background: $dark;
+   border-bottom: 3px solid red;
+   h2{
+      color: $white;
+      position: relative;
+      &::before{
+            position: absolute;
+            content: '';
+            display: block;
+            width: 6rem;
+            height: 2px;
+            background: $border;
+            top: 44%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+      }
+   }
+   &__singleprogress{
+      margin-bottom: 2rem;
+      h5{
+         font-family: $primary-font;
+         color: $white;
+      }
+      .progress{
+         border-radius: 0px!important;
+         .progress-bar{
+
+         }
+      }
+   }
+}
+
+/* ============================ 
+        servicse area start 
+==============================*/
+.services{
+   background: $dark;
+   height: auto;
+   &__text{
+      padding-top: 5rem;
+      h6{
+         font-family: $primary-font;
+         text-transform: uppercase;
+         color: #E6425E;
+         font-weight: bold;
+
+      }
+      h2{
+         text-transform: uppercase;
+         color: $white;
+         position: relative;
+         &::before{
+            position: absolute;
+            content: '';
+            display: block;
+            width: 13rem;
+            height: 2px;
+            background: $border;
+            top: 108%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+         }
+      }
+   }
+   &__single-servie{
+      background: $white;
+      padding: 4rem;
+      border-radius: 5px;
+      span{
+         i{
+            font-size: 2rem;
+            color: #000;
+            border: 2px solid #898989;
+            width: 4rem;
+            height: 4rem;
+            background: transparent;
+            line-height: 1.9;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+         }
+      }
+      .content{
+         margin-top: 2rem;
+         h4{
+             font-family: $primary-font;
+         }
+         p{
+            font-family: $primary-font;
+            letter-spacing: 1px;
+         }
+      }
+      &:hover{
+      span{
+         i{
+            color: $white;
+            border: 2px solid $dark;
+            background: $dark;
+         }
+      }
+   }
+   }
+}
+
+
+

@@ -1,0 +1,540 @@
+/*
+  Theme Name: Name - Multipurpose HTML Template
+  Author: mdsalim400@gmail.com
+  Support: admin@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+
+===================================================================================
+  Table of Contents
+===================================================================================
+1.  General Styles
+2.  Top Navbar
+3.  Header
+4.  Sidemenu
+5.  Megamenu
+6.  Breadcrumb
+7.  Sections
+8.  Controls
+9.  Carousel
+10. Product Item
+11. Pages : Home
+12. Pages : Single Product
+13. Pages : Shopping Cart
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0; }
+
+::-webkit-scrollbar {
+  width: 0.625rem; }
+
+::-webkit-scrollbar-track {
+  background: #fff; }
+
+a,
+a:hover {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+html {
+  font-size: 0.625 px;
+  scroll-behavior: smooth; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif; }
+
+body {
+  font-size: 100%;
+  font-family: roboto;
+  font-weight: 400;
+  overflow-x: hidden; }
+
+h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: red;
+  font-family: candara; }
+
+ol,
+ul {
+  margin: 0px;
+  padding: 0px; }
+
+.navbar-toggler:focus {
+  box-shadow: 0px 0px 0px 0px; }
+
+a,
+.btn {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; }
+
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+  outline: 0; }
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none; }
+
+/*Default margin & Padding*/
+.mt-5 {
+  margin-top: 0.5rem !important; }
+
+.mt-10 {
+  margin-top: 1rem; }
+
+.mt-15 {
+  margin-top: 1.5rem; }
+
+.mt-20 {
+  margin-top: 2rem; }
+
+.mt-25 {
+  margin-top: 2.5rem; }
+
+.mt-30 {
+  margin-top: 3rem; }
+
+.mt-35 {
+  margin-top: 3.5rem; }
+
+.mt-40 {
+  margin-top: 4rem; }
+
+.mt-45 {
+  margin-top: 4.5rem; }
+
+.mt-50 {
+  margin-top: 5rem; }
+
+.mt-60 {
+  margin-top: 6rem; }
+
+.mt-70 {
+  margin-top: 7rem; }
+
+.mt-80 {
+  margin-top: 8rem; }
+
+.mt-90 {
+  margin-top: 9rem; }
+
+.mt-100 {
+  margin-top: 10rem; }
+
+/*margin bottom*/
+.mb-10 {
+  margin-bottom: 1rem; }
+
+.mb-15 {
+  margin-bottom: 1.5rem; }
+
+.mb-20 {
+  margin-bottom: 2rem; }
+
+.mb-25 {
+  margin-bottom: 2.5rem; }
+
+.mb-30 {
+  margin-bottom: 3rem; }
+
+.mb-40 {
+  margin-bottom: 4rem; }
+
+.mb-50 {
+  margin-bottom: 5rem; }
+
+.mb-60 {
+  margin-bottom: 6rem; }
+
+.mb-70 {
+  margin-bottom: 7rem; }
+
+.mb-80 {
+  margin-bottom: 8rem; }
+
+.mb-90 {
+  margin-bottom: 9rem; }
+
+.mb-100 {
+  margin-bottom: 10rem; }
+
+/*padding top*/
+.pt-10 {
+  padding-top: 1rem; }
+
+.pt-15 {
+  padding-top: 1.5rem; }
+
+.pt-20 {
+  padding-top: 2rem; }
+
+.pt-25 {
+  padding-top: 2.5rem; }
+
+.pt-30 {
+  padding-top: 3rem; }
+
+.pt-40 {
+  padding-top: 4rem; }
+
+.pt-50 {
+  padding-top: 5rem; }
+
+.pt-60 {
+  padding-top: 6rem; }
+
+.pt-70 {
+  padding-top: 7rem; }
+
+.pt-80 {
+  padding-top: 8rem; }
+
+.pt-90 {
+  padding-top: 9rem; }
+
+.pt-100 {
+  padding-top: 10rem; }
+
+/*padding bottom*/
+.pb-10 {
+  padding-bottom: 1rem; }
+
+.pb-15 {
+  padding-bottom: 1.5rem; }
+
+.pb-20 {
+  padding-bottom: 2rem; }
+
+.pb-25 {
+  padding-bottom: 2.5rem; }
+
+.pb-30 {
+  padding-bottom: 3rem; }
+
+.pb-40 {
+  padding-bottom: 4rem; }
+
+.pb-50 {
+  padding-bottom: 5rem; }
+
+.pb-60 {
+  padding-bottom: 6rem; }
+
+.pb-70 {
+  padding-bottom: 7rem; }
+
+.pb-80 {
+  padding-bottom: 8rem; }
+
+.pb-90 {
+  padding-bottom: 9rem; }
+
+.pb-100 {
+  padding-bottom: 10rem; }
+
+/*=======Fontsize========*/
+/*====Button====*/
+.btn {
+  background: #ff68a3;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: candara;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 2rem 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  vertical-align: middle;
+  border-radius: 3rem;
+  border: 2px solid transparent; }
+
+.btn-border {
+  border-color: #fff;
+  background: transparent;
+  transition: all 0.3s; }
+
+.btn-border:hover {
+  background: #ff68a3;
+  border: none; }
+
+.btn:hover {
+  color: #fff;
+  background: red; }
+
+.section-title h2 {
+  font-size: 4rem;
+  color: red;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 1rem; }
+  .section-title h2::before {
+    content: '';
+    display: block;
+    width: 7rem;
+    height: 3px;
+    background: green;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto; }
+
+/*============================ 
+    Header area design 
+==============================*/
+header {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0px;
+  width: 100%;
+  z-index: 999; }
+
+.sticky-header.sticky {
+  position: fixed;
+  background: #0d1619;
+  right: 0px;
+  margin-top: 0px;
+  -webkit-animation-name: animationFade;
+  animation-name: animationFade;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35); }
+
+.header {
+  padding: 2rem 0px; }
+  .header__logo a {
+    font-size: 30px;
+    color: red;
+    font-weight: bold; }
+  .header__menu .menu-list .nav-item {
+    display: inline-block; }
+    .header__menu .menu-list .nav-item .nav-link {
+      display: block;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-family: Poppins; }
+
+@-webkit-keyframes animationFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+@keyframes animationFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+/* ============================ 
+        Banner area start 
+==============================*/
+.banner {
+  height: 42rem;
+  background: #000;
+  border-bottom: 3px solid red; }
+  .banner .text-content {
+    margin-top: 18rem;
+    color: #fff; }
+    .banner .text-content span {
+      font-size: 1rem;
+      font-family: Poppins; }
+    .banner .text-content h2 {
+      font-size: 3rem; }
+    .banner .text-content p {
+      font-family: Poppins; }
+    .banner .text-content h4 {
+      color: #f9ca24; }
+  .banner .pthumb {
+    margin-top: 10rem; }
+    .banner .pthumb img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%; }
+  .banner .social ul {
+    position: absolute;
+    right: 25%; }
+    .banner .social ul li {
+      display: inline-block; }
+      .banner .social ul li a {
+        margin: .33rem; }
+        .banner .social ul li a i {
+          color: #fff;
+          font-size: 2rem; }
+
+/* ============================ 
+        Contact area start 
+==============================*/
+.contact {
+  background: #000;
+  height: auto;
+  padding-bottom: 5rem;
+  border-bottom: 3px solid red; }
+  .contact__text {
+    padding-top: 5rem; }
+    .contact__text h6 {
+      font-family: Poppins;
+      text-transform: uppercase;
+      color: #E6425E;
+      font-weight: bold; }
+    .contact__text h2 {
+      text-transform: uppercase;
+      color: #fff;
+      position: relative; }
+      .contact__text h2::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 13.5rem;
+        height: 2px;
+        background: #f9ca24;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+  .contact__widget {
+    color: #fff;
+    background: #059DC0;
+    padding: 5rem;
+    margin-top: 4rem;
+    border-radius: 5px; }
+    .contact__widget a i {
+      color: #E6425E;
+      font-size: 2.4rem;
+      margin-top: 1rem; }
+    .contact__widget h4 {
+      font-family: Poppins;
+      margin-top: 1rem; }
+    .contact__widget span {
+      font-family: Poppins; }
+
+/* ============================ 
+        Skill area start 
+==============================*/
+.skill {
+  background: #000;
+  border-bottom: 3px solid red; }
+  .skill h2 {
+    color: #fff;
+    position: relative; }
+    .skill h2::before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 6rem;
+      height: 2px;
+      background: #f9ca24;
+      top: 44%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .skill__singleprogress {
+    margin-bottom: 2rem; }
+    .skill__singleprogress h5 {
+      font-family: Poppins;
+      color: #fff; }
+    .skill__singleprogress .progress {
+      border-radius: 0px !important; }
+
+/* ============================ 
+        servicse area start 
+==============================*/
+.services {
+  background: #000;
+  height: auto; }
+  .services__text {
+    padding-top: 5rem; }
+    .services__text h6 {
+      font-family: Poppins;
+      text-transform: uppercase;
+      color: #E6425E;
+      font-weight: bold; }
+    .services__text h2 {
+      text-transform: uppercase;
+      color: #fff;
+      position: relative; }
+      .services__text h2::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 13rem;
+        height: 2px;
+        background: #f9ca24;
+        top: 108%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+  .services__single-servie {
+    background: #fff;
+    padding: 4rem;
+    border-radius: 5px; }
+    .services__single-servie span i {
+      font-size: 2rem;
+      color: #000;
+      border: 2px solid #898989;
+      width: 4rem;
+      height: 4rem;
+      background: transparent;
+      line-height: 1.9;
+      border-radius: 50%;
+      transition: all 0.3s ease; }
+    .services__single-servie .content {
+      margin-top: 2rem; }
+      .services__single-servie .content h4 {
+        font-family: Poppins; }
+      .services__single-servie .content p {
+        font-family: Poppins;
+        letter-spacing: 1px; }
+    .services__single-servie:hover span i {
+      color: #fff;
+      border: 2px solid #000;
+      background: #000; }

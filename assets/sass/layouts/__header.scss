@@ -1,0 +1,76 @@
+/*============================ 
+    Header area design 
+==============================*/
+header{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0px;
+    width: 100%;
+    z-index: 999;
+}
+.sticky-header{
+    &.sticky{
+        position: fixed;
+        background: #0d1619;
+        right: 0px;
+        margin-top: 0px;
+        -webkit-animation-name: animationFade;
+        animation-name: animationFade;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
+        box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
+    }
+} 
+.header{
+    padding: 2rem 0px;
+    &__logo{
+        a{
+            font-size: 30px;
+            color: red;
+            font-weight: bold;
+        }
+    }
+    &__menu{
+        .menu-list{
+            .nav-item{
+                display: inline-block;
+                .nav-link{
+                    display: block;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    font-family: Poppins;
+                }
+            }
+        }
+    }
+}
+
+@-webkit-keyframes animationFade {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@keyframes animationFade {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
